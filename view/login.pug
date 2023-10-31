@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon",type="image/ico", href="/images/logo.jpg")
+        title #{title}
+        link(rel="stylesheet", href="/css/style.css")
+    body 
+       .form-container
+        h1 Welcome back!
+        p log in to access your account.
+        form#frm(method="POST") 
+           p.errorMessage #{errorMessage} 
+           .row
+             input(type="text" required="" name="username")
+             label Email or Username
+           .row
+             input(type="password" required="" name="password")
+             label Password
+           .row
+             button(type="submit") Login Now
+        p Not a Member ? 
+          a(href="/register") Signup Here 
+          br
+          a(href="#") Forget Password ? 

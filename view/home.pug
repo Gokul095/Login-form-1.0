@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon",type="image/ico", href="/images/logo.jpg")
+        title #{title}
+    body 
+      h1 Home Page
+      a(href="/logout") Logout
+      p #{userDetails.name} 
+      p #{userDetails.email} 
+
+      img(src=userDetails.profilePic, alt="User Profile Picture" width="100px")
