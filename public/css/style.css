@@ -36,9 +36,9 @@ body {
     box-shadow: 5px 5px var(--color5);
     cursor: pointer;
     opacity: 0;
-    animation: fadeIn ease-in 0.5s;
+    animation: fadeIn ease-in 0.3s;
     animation-fill-mode: forwards;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
 }
 
 @keyframes fadeIn {
@@ -114,6 +114,7 @@ body {
     font-size: 18px;
     color: var(--white);
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .form-container .row:focus-within {
