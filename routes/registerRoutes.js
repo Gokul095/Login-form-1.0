@@ -33,7 +33,8 @@ router.post("/", async (req, res) => {
             const data = req.body;
             data.password = await bcrypt.hash(password, 10);
             User.create(data).then((user) => {
-                return res.status(201).json(user);
+                // return res.status(201).json(user);
+                return res.status(201).redirect("/login")
             })
         } else {
             pageData.errorMessage = "Username or Email already Taken...!";
